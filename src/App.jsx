@@ -1,13 +1,8 @@
 import "./App.css";
 
-function App() {
+function Header () {
   return (
-    <div>
-      {/*
-        Todo: 1 ให้ Declare ตัว Component ย่อย 
-       เพื่อแบ่งสัดส่วนของ HTML Element ในส่วนของ <header> 
-      */}
-      <header>
+    <header>
         <nav>
           <div className="logo">🚀 XYZ CORP</div>
           <ul className="nav-list">
@@ -26,12 +21,12 @@ function App() {
           </ul>
         </nav>
       </header>
+  )
+}
 
-      {/*
-        Todo 2: ให้ Declare ตัว Component ย่อย
-        เพื่อแบ่งสัดส่วนของ HTML Element ในส่วนของ <main> 
-      */}
-      <main>
+function MainContent () {
+  return (
+    <main>
         <div className="company-detail-left">
           <h1>Welcome to XYZ Corp</h1>
           <p>Your Trusted Partner in Excellence</p>
@@ -60,7 +55,22 @@ function App() {
           <button className="learn-button">Learn More</button>
         </div>
       </main>
+  )
+}
 
+function App() {
+  return (
+    <div>
+      {/*
+        Todo: 1 ให้ Declare ตัว Component ย่อย 
+       เพื่อแบ่งสัดส่วนของ HTML Element ในส่วนของ <header> 
+      */}
+      <Header />
+      {/*
+        Todo 2: ให้ Declare ตัว Component ย่อย
+        เพื่อแบ่งสัดส่วนของ HTML Element ในส่วนของ <main> 
+      */}
+      <MainContent />
       {/*
         Todo 3: ให้ Declare ตัว Component ย่อย
         เพื่อแบ่งสัดส่วนของ HTML Element ในส่วนของ <section className="product-section"> 
